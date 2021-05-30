@@ -1,3 +1,4 @@
+# This script is for running BlackMagic's Capture Card drivers
 #!/bin/sh
 exec 2>&1 # redirect stderr to stdout
-exec /usr/lib64/blackmagic/DesktopVideo/DesktopVideoHelper -n
+exec /usr/lib64/blackmagic/DesktopVideo/DesktopVideoHelper -n # -n prevent's the program from forking itself
