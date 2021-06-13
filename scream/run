@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-scream-ivshmem-pulse /dev/shm/scream-ivshmem
+exec 2>&1
+exec chpst -u andrew scream-ivshmem-pulse /dev/shm/scream-ivshmem
